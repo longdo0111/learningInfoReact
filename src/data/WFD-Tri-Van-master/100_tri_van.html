@@ -1,0 +1,61 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title>PTE MAGIC -- Practice Write From Dictation</title>
+		<link rel="stylesheet" href="css/style.css"> </link>
+		<script src="js/content100.js"></script>
+		<script src="js/content50.js"></script>
+		<script src="js/contentwfd3Jul.js"></script>
+		<script src="js/contentrs3Jul.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/responsivevoice.js"></script>
+		<script src="js/underscore.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script> -->
+	</head>
+
+	<body id="mainLoad">
+
+		<p id="pageTitle"> PTE MAGIC - 108 most repeated sentences - 26 Feb 2019</p>
+
+		<p> Select Voices : <select id="selectVoices"></select> </p>
+		<p> Select Source : 
+			<select id="selectSource">
+				<option value="content100">108 sentences of dictation (Most Repeated)</option>
+				<option value="content50">54 DICTATION SENTENCES UPDATE JAN 2019</option>
+				<option value="content3rdJul">3rd - July DICTATION SENTENCES UPDATE JULY 2019</option>
+				<option value="contentrs3rdJul">3rd - July REPEAT SENTENCES UPDATE JULY 2019</option>
+			</select> 
+		</p>
+			<span>Voice speed: </span><span id="sliderValue" style="font-size: bold; color: red;">1.1</span>
+		<p>
+			<div class="slidecontainer">
+				<input type="range" min="0" max="5" value="2" class="slider" id="slider" />
+			</div>			
+		</p>
+
+		<button type="button" id="btnPlay">Click to play sentence</button>
+		<button type="button" id="btnRepeat">Repeat</button>
+
+		<p> Type Answer Here : <br /><textarea rows="3" cols="45" type="text" id="txtInput"></textarea> </p>
+
+		<button type="button" id="btnShowAnswer">Show Answer</button>
+
+		<button type="button" id="btnCountIncorrect" >Count Incorrect</button>
+
+		<span id="divCount"> </span>
+		<!-- <p id="divDiff"> </p> -->
+		<p> Answer : <br /><textarea rows="3" cols="45" type="text" id="txtAnswer"></textarea> </p>
+		<p>
+			<select id="selectSentences"></select>
+			<input type="checkbox" id="chkIgnoreGroupTitle" value="0" checked /> <label for="chkIgnoreGroupTitle"> Ignore Group Title</label>
+			<input type="checkbox" id="chkAlwaysShowAnswer" value="0" /> <label for="chkAlwaysShowAnswer"> Show Answer</label>
+			<input type="checkbox" id="chkRandomQuestion" value="0" /> <label for="chkRandomQuestion">Random question</label>
+			<input type="checkbox" id="chkReverseQuestion" value="0" /> <label for="chkReverseQuestion">Reverse questions</label>
+		</p>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
